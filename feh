@@ -1,1 +1,4 @@
-/etc/customizepkg.d/feh
+replace#global#exif=1#exif=0 xinerama=0
+
+remove#depends#libexif
+remove#depends#libxinerama

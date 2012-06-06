@@ -1,1 +1,3 @@
-/etc/customizepkg.d/libsndfile
+remove#depends#flac
+remove#depends#libvorbis
+replace#global#configure#configure --disable-external-libs

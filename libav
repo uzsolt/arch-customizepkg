@@ -1,1 +1,5 @@
-/etc/customizepkg.d/libav
+add#depends#sdl
+add#depends#xvidcore
+
+replace#global#--disable-avplay#--enable-avplay --enable-libxvid
+

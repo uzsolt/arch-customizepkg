@@ -1,1 +1,4 @@
-/etc/customizepkg.d/curl
+replace#global#configure#configure --without-libssh2
+
+remove#depends#libssh2
+

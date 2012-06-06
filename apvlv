@@ -1,1 +1,2 @@
-/etc/customizepkg.d/apvlv
+remove#depends#djvulibre
+replace#global#  cmake#  cmake -DAPVLV_WITH_DJVU=no

@@ -1,1 +1,4 @@
-/etc/customizepkg.d/cdrdao
+replace#global#--with-ogg-support#--without-ogg-support
+remove#global#'libvorbis'
+remove#makedepends#libgnomeuimm
+remove#pkgname#gcdmaster

@@ -1,1 +1,17 @@
-/etc/customizepkg.d/ffmpeg
+remove#depends#libpulse
+remove#depends#speex
+remove#depends#gsm
+remove#depends#opencore-amr
+remove#depends#sdl
+remove#depends#libvorbis
+remove#depends#libtheora
+remove#makedepends#libvdpau
+
+replace#global#configure#configure --disable-vdpau
+replace#global#--enable-libpulse#--disable-libpulse --disable-ffplay
+replace#global#--enable-libspeex#--disable-libspeex
+replace#global#--enable-libgsm#--disable-libgsm
+replace#global#--enable-libopencore#--disable-libopencore
+replace#global#--enable-libvorbis#--disable-libvorbis
+replace#global#--enable-libtheora#--disable-libtheora
+

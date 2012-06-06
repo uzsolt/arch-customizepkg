@@ -1,1 +1,5 @@
-/etc/customizepkg.d/asymptote
+remove#depends#gsl
+remove#depends#fftw
+
+replace#global#configure#configure --enable-fftw=no --enable-gsl=no
+replace#global#check-all#check

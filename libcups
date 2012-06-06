@@ -1,1 +1,2 @@
-/etc/customizepkg.d/libcups
+remove#global#'avahi'
+replace#global#--enable-avahi#--disable-avahi

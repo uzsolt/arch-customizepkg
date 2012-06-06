@@ -1,1 +1,2 @@
-/etc/customizepkg.d/alsa-utils
+remove#depends#libsamplerate
+replace#global#configure#configure --disable-alsatest

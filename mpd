@@ -1,1 +1,31 @@
-/etc/customizepkg.d/mpd
+# This is an example of config file for customizepkg
+#  Copy this file in /etc/customizepkg.d/epdfview to use it
+#
+# syntax works like this:
+#ACTION CONTEXT PATTERN VALUE 
+#
+#Action can be: remove, add or replace
+#Context can be: depends, conflicts, makedepends etc.. or global for matching regexp in the all PKGBUILD
+#Pattern can be any rexgexp 
+#Value (optionnal) can be any string 
+#
+replace#global#--enable-lastfm#--disable-lastfm --enable-shout=no \
+--enable-modplug=no --enable-flac=no --enable-gme=no --enable-mms=no \
+--disable-wavpack --disable-mpc --enable-twolame-encoder=no --enable-shout=no --enable-mpg123=no --disable-aac --enable-audiofile=no \
+--enable-ffmpeg=no --with-zeroconf=no --enable-vorbis=no --enable-vorbis-encoder=no --enable-lsr=no
+
+replace#global#--enable-jack#--disable-jack
+remove#depends#jack
+
+replace#global#--enable-pulse#--disable-pulse
+remove#depends#libpulse
+
+remove#depends#libmodplug
+remove#depends#audiofile
+remove#depends#libshout
+remove#depends#faad2
+remove#depends#wavpack
+remove#depends#libmpcdec
+remove#depends#libmms
+remove#depends#avahi
+remove#depends#ffmpeg

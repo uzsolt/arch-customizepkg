@@ -1,1 +1,17 @@
-/etc/customizepkg.d/hplip
+replace#global#--enable-foomatic#--disable-foomatic
+replace#global#--enable-hpcups#--disable-hpcups
+replace#global#--enable-cups#--disable-cups
+replace#global#--enable-new-hpcups#--disable-new-hpcups
+replace#global#--enable-pp#--disable-pp
+replace#global#--enable-hpijs#--disable-hpijs
+replace#global#--enable-qt4#--disable-qt4
+
+replace#global#configure#configure --enable-foomatic-drv-install=no \
+    --enable-cups-drv-install=no --enable-fax-build=no --enable-gui-build=no \
+    --enable-network-build=no
+
+remove#depends#foomatic-db.*
+remove#global#'python2-pyqt'
+remove#global#'rpcbind'
+remove#global#'python2-gobject2'
+

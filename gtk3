@@ -1,1 +1,3 @@
-/etc/customizepkg.d/gtk3
+remove#depends#colord
+
+replace#global#configure#configure --enable-colord=no

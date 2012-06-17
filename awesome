@@ -1,0 +1,3 @@
+remove#makedepends#asciidoc
+remove#makedepends#luadoc
+replace#global#-DPREFIX=\\/usr#-DPREFIX=\\/usr -DGENERATE_LUADOC=no -DGENERATE_MANPAGES=OFF

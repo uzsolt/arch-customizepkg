@@ -1,0 +1,3 @@
+remove#depends#libidn
+replace#global#--enable-pop#--disable-pop
+replace#global#--with-idn#--without-idn

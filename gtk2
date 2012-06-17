@@ -1,0 +1,2 @@
+replace#global#configure#configure --enable-gtk-doc-html=no --enable-gtk-doc=no
+replace#global#CXX#sed -i "s@docs @@" Makefile.in ; echo "hu" > po\\/LINGUAS ; CXX

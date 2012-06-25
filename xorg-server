@@ -1,0 +1,1 @@
+replace#global#configure#configure --with-default-xkb-layout=hu --without-xmlto --without-doxygen

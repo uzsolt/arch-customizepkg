@@ -1,1 +1,1 @@
-replace#global#configure#configure --with-pkgconfigdir
+replace#global#configure#configure --with-binconfigs

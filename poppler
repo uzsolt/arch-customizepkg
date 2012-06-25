@@ -1,0 +1,1 @@
+replace#global#--prefix#--enable-libcurl --with-x --prefix

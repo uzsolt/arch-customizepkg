@@ -1,0 +1,2 @@
+replace#global#--enable-openvz#--disable-openvz
+replace#global#--enable-vserver#--disable-vserver --enable-taskstats

@@ -1,0 +1,1 @@
+replace#global#configure#configure --enable-pcregrep-libz --enable-pcgrep-libbz2

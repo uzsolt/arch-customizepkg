@@ -1,0 +1,2 @@
+replace#global#--with-threads#--with-threads --with-pth
+remove#makedepends#'tk'

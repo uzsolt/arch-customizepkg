@@ -1,0 +1,7 @@
+replace#global#configure#configure --enable-readline
+remove#makedepends#'tcl'
+replace#global#.*build the tcl.*#<<COMMENT
+replace#global#--with-system-sqlite#\\nCOMMENT
+
+remove#global#'sqlite-tcl'
+remove#global#'sqlite-doc'

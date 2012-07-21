@@ -1,0 +1,17 @@
+remove#timezones#africa
+remove#timezones#antarctica
+remove#timezones#australasia
+remove#timezones#asia
+remove#timezones#northamerica
+remove#timezones#southamerica
+remove#timezones#pacificnew
+remove#timezones#etcetera
+remove#timezones#backward
+remove#timezones#systemv
+remove#timezones#factory
+remove#timezones#solar87
+remove#timezones#solar88
+remove#timezones#solar89
+
+replace#global#America#Europe
+replace#global#New_York#Budapest

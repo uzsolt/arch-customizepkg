@@ -1,1 +1,2 @@
 replace#global#configure#configure --enable-threads=posix
+replace#global#.*configure#clean_langs ; &

@@ -1,0 +1,1 @@
+replace#global#.*configure#LDFLAGS="-lm" LINGUAS=hu &

@@ -1,2 +1,13 @@
+remove#makedepends#'avahi'
+remove#makedepends#'colord'
+remove#makedepends#xinetd
+remove#makedepends#gnutls
+
+remove#global#'colord'
 remove#global#'avahi'
+remove#global#'gnutls>=[0-9\.]*'
+
+replace#global#.*.\\/configure#clean_langs ; &
 replace#global#--enable-avahi#--disable-avahi
+replace#global#--enable-gnutls#--disable-gnutls
+replace#global#--enable-ssl=yes#--disable-ssl

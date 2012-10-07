@@ -1,1 +1,1 @@
-replace#global#configure#configure --enable-threads
+replace#global#.*configure#clean_langs ; & --enable-threads

@@ -1,4 +1,4 @@
-replace#global#configure#configure --without-libssh2
+replace#global#configure#configure --without-libssh2 --without-librtmp
 
 remove#depends#libssh2
 

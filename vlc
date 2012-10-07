@@ -1,6 +1,4 @@
 remove#depends#faad2
-remove#depends#ffmpeg
-#replace#depends#ffmpeg#libav
 remove#depends#libass
 remove#depends#libdca
 remove#depends#libdvbpsi
@@ -45,27 +43,29 @@ replace#global#--enable-faad#--disable-faad
 replace#global#--enable-lirc#--disable-lirc
 replace#global#--enable-nls#--disable-nls
 replace#global#--enable-oss#--disable-oss
+replace#global#--enable-ncurses#--disable-ncurses
 replace#global#--enable-pvr#--disable-pvr
 replace#global#--enable-realrtsp#--disable-realrtsp
+replace#global#--enable-upnp#--disable-upnp
 replace#global#--enable-vcd#--disable-vcd
 replace#global#--enable-vcdx#--disable-vcdx
 replace#global#--enable-xosd#--disable-xosd
 
 replace#global#configure#configure \
-              --disable-{atmo,bluray,bonjour,caca,coverage,cprof} \
+              --disable-{atmo,avformat,bluray,bonjour,caca,coverage,cprof} \
               --disable-{dbus,dbus-control,dca,dc1394,debug,decklink,dirac,directfb,directx,dshow,dv,fbosd,flac,fluidsynth,fribidi} \
               --disable-{gme,gnomevfs,gnutls,goom,gprof,growl,httpd,jack,kate} \
               --disable-{libass,libcddb,libgcrypt,libproxy,libtar,linsys,live555,loader,lua} \
-              --disable-{macosx,macosx-audio,mkv,mod,mpc,mtp,notify,ogg,opencv} \
+              --disable-{macosx,macosx-audio,mkv,mod,mpc,mtp,mux_ogg,ncurses,notify,ogg,opencv} \
               --disable-{png,portaudio,postproc,projectm,pulse,quicktime,real,rpath,run-as-root} \
               --disable-{schroedinger,screen,sdl,sdl-image,sftp,shine,shout,sid,skins2,smb,speex,sqlite,svg,switcher,swscale} \
               --disable-{taglib,telepathy,telx,theora,tiger,tremor,twolame} \
               --disable-{udev,upnp,update-check,vcd,visual,vlm,vorbis,v4l2} \
-              --disable-{waveout,wingdi,wma-fixed,zvbi} \
-              --enable-{avcodec,avformat,alsa,a52,dvdnav,dvdread,fontconfig,freetype,glx} \
-              --enable-{libxml2,libmpeg2,mad,ncurses} \
+              --disable-{waveout,wingdi,wma-fixed,x264,zvbi} \
+              --enable-{alsa,a52,avcodec,dvdnav,dvdread,fontconfig,freetype,glx} \
+              --enable-{libxml2,libmpeg2,mad} \
               --enable-{optimize-memory,optimizations,qt4,sout} \
-              --enable-{vlc,xvideo,xcb,x264}
+              --enable-{vlc,xvideo,xcb}
 
 # remove#backup#.*hosts
 

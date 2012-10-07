@@ -5,13 +5,15 @@ remove#depends#opencore-amr
 remove#depends#sdl
 remove#depends#libvorbis
 remove#depends#libtheora
+remove#depends#v4l-utils
 remove#makedepends#libvdpau
 
 replace#global#configure#configure --disable-vdpau
-replace#global#--enable-libpulse#--disable-libpulse --disable-ffplay
+replace#global#--enable-libpulse#--disable-libpulse
 replace#global#--enable-libspeex#--disable-libspeex
 replace#global#--enable-libgsm#--disable-libgsm
 replace#global#--enable-libopencore#--disable-libopencore
 replace#global#--enable-libvorbis#--disable-libvorbis
 replace#global#--enable-libtheora#--disable-libtheora
-
+replace#global#--enable-libv4l2#--disable-libv4l2
+replace#global#--enable-runtime-cpudetect#--cpu=host

@@ -3,7 +3,7 @@ remove#global#'libgphoto2[^']*'
 remove#depends#v4l-utils
 remove#depends#libieee1284
 
-replace#global#--enable-avahi#--disable-avahi
+replace#global#--enable-avahi#--disable-avahi --disable-nls
 
 replace#global#.\\/configure#sed -i '\\/v4l\\/d' backend\\/dll.conf.in \\; &
 

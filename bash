@@ -1,1 +1,1 @@
-replace#global#configure#configure --enable-progcomp --enable-multibyte
+replace#global#.*configure#clean_langs ; & --enable-progcomp --enable-multibyte

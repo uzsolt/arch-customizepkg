@@ -1,1 +1,1 @@
-replace#global#configure#configure --with-pager=less
+replace#global#.*configure#clean_langs ; & --with-pager=less

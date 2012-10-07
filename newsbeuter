@@ -1,0 +1,2 @@
+replace#global#make prefix=\\/usr$#clean_langs ; sed -ri "s@^all:.*..PODBEUTER.@all: newsbeuter@" Makefile ; &
+

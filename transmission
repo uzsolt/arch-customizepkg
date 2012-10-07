@@ -1,0 +1,3 @@
+replace#global#--prefix#--without-gtk &
+remove#makedepends#gtk3
+remove#pkgname#transmission-gtk

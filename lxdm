@@ -1,1 +1,1 @@
-replace#global#configure#configure -with-xconn=xcb
+replace#global#.*configure#clean_langs ; & -with-xconn=xcb

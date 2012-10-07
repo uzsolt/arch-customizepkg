@@ -1,1 +1,1 @@
-replace#global#configure#configure --with-libiconv-prefix
+replace#global#.*configure#clean_langs ; & --with-libiconv-prefix

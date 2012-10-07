@@ -1,1 +1,2 @@
 replace#global#--enable-doc#--enable-doc --disable-doxygen
+replace#global#.*configure#clean_langs ; &

@@ -1,2 +1,2 @@
 remove#depends#libsamplerate
-replace#global#configure#configure --disable-alsatest
+replace#global#.*configure#clean_langs ; & --disable-alsatest

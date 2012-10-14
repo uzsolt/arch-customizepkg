@@ -1,0 +1,1 @@
+replace#global#.*binutils\\/configure#& --disable-nls 

@@ -1,1 +1,1 @@
-replace#global#configure#configure --enable-dri
+replace#global#\.\\/configure#& --enable-dri

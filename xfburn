@@ -1,0 +1,3 @@
+replace#global#--enable-gstreamer#--disable-gstreamer
+remove#depends#gstreamer0.10-base
+# replace#global#.*configure#clean_langs ; &

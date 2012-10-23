@@ -1,0 +1,3 @@
+replace#global#--enable-gtk-doc#--disable-gtk-doc --disable-gtk-doc-html --disable-plymouth
+remove#global#'gtk-doc'
+remove#global#.*pkgdir.*gtk-doc.*html.*

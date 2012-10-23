@@ -1,0 +1,3 @@
+remove#pkgname#libunrar
+remove#global#make -C.*
+remove#global#cp -a.*

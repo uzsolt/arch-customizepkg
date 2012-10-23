@@ -1,0 +1,3 @@
+remove#depends#libtiff
+remove#depends#libid3tag
+replace#global#configure#& --enable-amd64 --without-id3 --without-tiff

@@ -1,0 +1,2 @@
+remove#makedepends#xmlto
+replace#global#--enable-docbook-docs#--disable-docbook-docs

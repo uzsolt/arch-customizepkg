@@ -1,0 +1,1 @@
+replace#global#qmake#rm `ls share\\/keepassx\\/i18n\\/* | grep -v hu` ; &

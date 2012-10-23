@@ -1,0 +1,10 @@
+replace#global#--enable-jpilot#--disable-jpilot
+remove#depends#pilot-link
+
+replace#global#--enable-enchant#--disable-enchant
+remove#depends#enchant
+
+replace#global#.*configure#clean_langs ; & --disable-networkmanager-support --disable-spamassassin-plugin --disable-compface --disable-bogofilter-plugin
+remove#makedepends#'spamassassin'
+remove#makedepends#'bogofilter'
+remove#makedepends#'compface'

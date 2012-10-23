@@ -1,0 +1,2 @@
+remove#makedepends#libpulse
+replace#global#configure#configure --disable-pulse --disable-arts --disable-wmm --disable-broken-oss

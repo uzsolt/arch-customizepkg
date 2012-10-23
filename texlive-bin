@@ -1,0 +1,8 @@
+remove#global#--with-clisp-[^ ]*
+replace#global#--enable-xindy#--disable-xindy
+replace#global#--enable-luatex#--disable-luatex --disable-xetex
+
+replace#global#\\/aleph#&\\\\|lualatex\\\\|luatex\\\\|dviluatex\\\\|xetex\\\\|xelatex
+
+remove#makedepends#clisp
+remove#makedepends#ffcall

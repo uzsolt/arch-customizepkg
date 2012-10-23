@@ -1,0 +1,3 @@
+replace#global#--prefix#--disable-gtk-doc{,-{html,pdf}} --disable-python --disable-nls &
+remove#makedepends#pygtk
+remove#makedepends#pygobject2-devel

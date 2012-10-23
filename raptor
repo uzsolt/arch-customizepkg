@@ -1,0 +1,3 @@
+replace#global#--prefix#--disable-gtk-doc{,-{html,pdf}} &
+replace#global#--with-yajl=no#--with-yajl
+replace#global#make.*install#&\\nrm -rf "${pkgdir}"/usr/share/gtk-doc

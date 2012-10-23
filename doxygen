@@ -1,0 +1,4 @@
+remove#global#--with-doxywizard
+remove#pkgname#doxygen-docs
+remove#makedepends#qt
+replace#global#configure#configure --enable-langs hu

@@ -1,0 +1,3 @@
+replace#global#configure#& --without-gtk --disable-desktop-files
+
+remove#depends#'gtk2'

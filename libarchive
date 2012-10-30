@@ -1,1 +1,1 @@
-replace#global#.*configure#sed -i "\\/^install-man:\\/ s,install-man3,," Makefile.in ; &
+replace#global#.*configure#sed -i "\\/^install-man:\\/ s,install-man3,," Makefile.in ; & --without-nettle

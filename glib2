@@ -1,1 +1,1 @@
-replace#global#.*configure #clean_langs ; &
+replace#global#.*\.\\/configure#clean_langs ; & --disable-modular-tests 

@@ -1,0 +1,2 @@
+replace#global#configure#& --without-pulse
+remove#depends#libpulse

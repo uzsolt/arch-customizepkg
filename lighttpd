@@ -1,0 +1,4 @@
+remove#makedepends#'lua51'
+remove#global#'lua51[^']*'
+
+replace#global#--with-lua#--without-lua

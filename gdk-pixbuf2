@@ -1,0 +1,2 @@
+replace#global#.*configure#clean_langs ; &
+remove#makedepends#gtk-doc

@@ -9,6 +9,7 @@ remove#depends#libshout
 remove#depends#libtiger
 remove#depends#libupnp
 remove#depends#libxpm
+remove#depends#lua51
 remove#depends#sdl_image
 remove#depends#taglib
 remove#depends#zvbi
@@ -28,9 +29,11 @@ remove#makedepends#libgoom2
 remove#makedepends#libmtp
 remove#makedepends#libnotify
 remove#makedepends#librsvg
+remove#makedepends#libssh2
 remove#makedepends#libtar
 remove#makedepends#lirc-utils
 remove#makedepends#live-media
+remove#makedepends#opus
 remove#makedepends#oss
 remove#makedepends#portaudio
 remove#makedepends#projectm
@@ -42,6 +45,7 @@ replace#global#--enable-aa#--disable-aa
 replace#global#--enable-faad#--disable-faad
 replace#global#--enable-lirc#--disable-lirc
 replace#global#--enable-nls#--disable-nls
+replace#global#--enable-opus#--disable-opus
 replace#global#--enable-oss#--disable-oss
 replace#global#--enable-ncurses#--disable-ncurses
 replace#global#--enable-pvr#--disable-pvr
@@ -57,15 +61,17 @@ replace#global#configure#configure \
               --disable-{gme,gnomevfs,gnutls,goom,gprof,growl,httpd,jack,kate} \
               --disable-{libass,libcddb,libgcrypt,libproxy,libtar,linsys,live555,loader,lua} \
               --disable-{macosx,macosx-audio,mkv,mod,mpc,mtp,mux_ogg,ncurses,notify,ogg,opencv} \
-              --disable-{png,portaudio,postproc,projectm,pulse,quicktime,real,rpath,run-as-root} \
+              --disable-{portaudio,postproc,projectm,pulse,quicktime,real,rpath,run-as-root} \
               --disable-{schroedinger,screen,sdl,sdl-image,sftp,shine,shout,sid,skins2,smb,speex,sqlite,svg,switcher,swscale} \
               --disable-{taglib,telepathy,telx,theora,tiger,tremor,twolame} \
               --disable-{udev,upnp,update-check,vcd,visual,vlm,vorbis,v4l2} \
               --disable-{waveout,wingdi,wma-fixed,x264,zvbi} \
               --enable-{alsa,a52,avcodec,dvdnav,dvdread,fontconfig,freetype,glx} \
               --enable-{libxml2,libmpeg2,mad} \
-              --enable-{optimize-memory,optimizations,qt4,sout} \
+              --enable-{png,optimize-memory,optimizations,qt4,sout} \
               --enable-{vlc,xvideo,xcb}
+
+replace#global#LUAC=.*#LUAC=""
 
 # remove#backup#.*hosts
 

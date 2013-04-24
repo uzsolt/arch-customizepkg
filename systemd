@@ -1,3 +1,6 @@
-replace#global#--enable-gtk-doc#--disable-gtk-doc --disable-gtk-doc-html --disable-plymouth
+replace#global#--enable-gtk-doc#--disable-gtk-doc --disable-gtk-doc-html
 remove#global#'gtk-doc'
 remove#global#.*pkgdir.*gtk-doc.*html.*
+remove#makedepends#python
+remove#makedepends#libmicrohttpd
+remove#makedepends#quota-tools

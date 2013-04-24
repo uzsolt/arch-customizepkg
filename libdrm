@@ -1,0 +1,1 @@
+replace#global#.*configure#& --disable-intel --disable-nouveau --disable-manpages

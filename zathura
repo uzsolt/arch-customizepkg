@@ -1,0 +1,3 @@
+remove#makedepends#python2-docutils
+
+replace#global#install -D.*zathura#& ; rm -rf $pkgdir\\/usr\\/share\\/locale

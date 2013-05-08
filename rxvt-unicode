@@ -1,1 +1,4 @@
 remove#global#install.*tabbed.*
+
+replace#global#--disable-pixbuf#--enable-pixbuf
+add#depends#gdk-pixbuf2

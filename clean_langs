@@ -1,0 +1,51 @@
+#!/bin/bash
+
+LANGFILE=/etc/langs
+
+DEBUG=0
+if [ "$1" == --debug ]; then
+    DEBUG=1
+fi
+
+if [ -f ${LANGFILE} -a -r ${LANGFILE} ]; then
+    LANGS=$(sed -n "s@^ \+@@ ; s@#.*@@ ; s@ @\\\|@g ; /^[^#]\+/p" ${LANGFILE})
+else
+    LANGS=".*"
+fi
+
+DIR=$(pwd)
+
+function msg_debug() {
+    [ $DEBUG -eq 0 ] && exit
+    echo -e $* >&2
+}
+
+function check_po_dir() {
+    for podir in $(find -type f -name "*.po" -exec dirname {} \; | sort -u); do
+        [ -d ${DIR}/${podir} ] && (
+            # maybe required by tests?
+            echo ${podir} | grep -q test && continue
+            cd ${DIR}/${podir}
+            msg_debug check ${DIR}/${podir}
+            DEL=$(ls *.{po,gmo} 2>/dev/null | grep -v "${LANGS}")
+            [ -n "${DEL}" ] && rm $DEL
+            [ -f LINGUAS ] && (
+                msg_debug "\tsedding LINGUAS"
+                sed -i "s@ @\n@g" LINGUAS
+                sed -i "/${LANGS}/p ; /.*/d" LINGUAS
+            )
+            cd ${DIR}
+            msg_debug "Back into ${DIR}"
+            for file in configure{,.in}; do
+                msg_debug "\tsedding ${file}"
+                [ -f ${file} ] && (
+                    [ "$LANGS" = ".*" ] || sed -i "/ALL_LINGUAS=\".*\"/ s@ALL_LINGUAS=.*@ALL_LINGUAS=\"$LANGS\"@" ${file}
+                )
+            done
+        )
+    done
+}
+
+check_po_dir
+
+exit 0

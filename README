@@ -1,1 +1,6 @@
 Some own customizepkg's on Arch Linux.
+
+The used clean_langs script is here,
+you should move to one of PATH directory (e.g. /usr/local/bin).
+The langs files should move to /etc (or you can
+overwrite in clean_langs).
